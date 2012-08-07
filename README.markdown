@@ -6,7 +6,7 @@ Summary
 -------
     Deal with everything related to swiss addresses.
     This is a meta-gem which consists of swissmatch-location, -street,
-    -directories and -activerecord.
+    -directories and -rails.
 
 
 
