@@ -13,6 +13,8 @@ Gem::Specification.new do |s|
 
   s.summary                   = <<-SUMMARY.gsub(/^    /, '').chomp
     Deal with everything related to swiss addresses.
+    This is a meta-gem which consists of swissmatch-location, -street,
+    -directories and -activerecord.
   SUMMARY
 
   s.files                     =
@@ -21,8 +23,8 @@ Gem::Specification.new do |s|
     Dir['lib/**/*'] +
     Dir['rake/**/*'] +
     Dir['test/**/*'] +
+    Dir['*.gemspec'] +
     %w[
-      swissmatch.gemspec
       Rakefile
       README.markdown
     ]
@@ -33,6 +35,9 @@ Gem::Specification.new do |s|
   end
 
   s.add_dependency "swissmatch-location"
+  s.add_dependency "swissmatch-street"
+  s.add_dependency "swissmatch-directories"
+  s.add_dependency "swissmatch-activerecord"
 
   s.required_rubygems_version = Gem::Requirement.new("> 1.3.1")
   s.rubygems_version          = "1.3.1"
