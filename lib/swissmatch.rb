@@ -2,7 +2,7 @@
 
 
 
-require 'swissmatch/active_record' if defined? ActiveRecord
+require 'swissmatch/activerecord' if defined? ActiveRecord
 require 'swissmatch/directories'
 require 'swissmatch/location'
 require 'swissmatch/street'
