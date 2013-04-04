@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name                      = "swissmatch"
-  s.version                   = "0.0.2"
+  s.version                   = "0.1.1"
   s.authors                   = "Stefan Rusterholz"
   s.email                     = "stefan.rusterholz@gmail.com"
   s.homepage                  = "http://github.com/apeiros/swissmatch"
@@ -34,10 +34,10 @@ Gem::Specification.new do |s|
     s.executables = executables unless executables.empty?
   end
 
-  s.add_dependency "swissmatch-location"
-  s.add_dependency "swissmatch-street"
-  s.add_dependency "swissmatch-directories"
-  s.add_dependency "swissmatch-rails"
+  s.add_dependency "swissmatch-location",     ">= 0.1.1"
+  s.add_dependency "swissmatch-street",       ">= 0.0.1"
+  s.add_dependency "swissmatch-directories",  ">= 0.0.1"
+  s.add_dependency "swissmatch-rails",        ">= 0.0.3"
 
   s.required_rubygems_version = Gem::Requirement.new("> 1.3.1")
   s.rubygems_version          = "1.3.1"

@@ -9,5 +9,5 @@ end
 module SwissMatch
 
   # The version of the swissmatch gem.
-  Version = Gem::Version.new("0.0.1")
+  Version = Gem::Version.new("0.1.1")
 end
