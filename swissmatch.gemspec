@@ -2,11 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name                      = "swissmatch"
-<<<<<<< HEAD
   s.version                   = "0.1.1"
-=======
-  s.version                   = "0.0.3"
->>>>>>> 205edaf7da3713629be2d4cba847bee9a72ffed8
   s.authors                   = "Stefan Rusterholz"
   s.email                     = "stefan.rusterholz@gmail.com"
   s.homepage                  = "http://github.com/apeiros/swissmatch"
@@ -35,8 +31,7 @@ Gem::Specification.new do |s|
     ]
 
   if File.directory?('bin') then
-    executables = Dir.chdir('bin') { Dir.glob('**/*').select { |f| File.executable?(f) } }
-    s.executables = executables unless executables.empty?
+    s.executables = Dir.chdir('bin') { Dir.glob('**/*').select { |f| File.executable?(f) } }
   end
 
   s.add_dependency "swissmatch-location",     ">= 0.1.1"
